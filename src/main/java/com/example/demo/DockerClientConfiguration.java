@@ -12,6 +12,6 @@ public class DockerClientConfiguration {
     @Bean
     public DockerClient dockerClient() throws DockerCertificateException {
         return DefaultDockerClient.fromEnv()
-                .build();
+            .build();
     }
 }

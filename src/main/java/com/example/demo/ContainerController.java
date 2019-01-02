@@ -25,7 +25,7 @@ public class ContainerController {
     @GetMapping(value = "/", produces = MediaType.APPLICATION_JSON_UTF8_VALUE)
     public List<Container> containerList() throws DockerException, InterruptedException {
         return dockerClient.listContainers(
-                allContainers()
+            allContainers()
         );
     }
 }
